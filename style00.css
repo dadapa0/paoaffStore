@@ -47,6 +47,38 @@ header h1 {
     line-height: 1.5;
 }
 
+/* Navigation container */
+.category-nav {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    margin: 16px 0;
+}
+
+/* Navigation buttons */
+.nav-btn {
+    flex: 1;                     /* evenly distribute width */
+    background-color: #3a155f;   /* dark purple */
+    color: #ffffff;              /* white text */
+    border: none;
+    padding: 10px 4px;
+    font-size: 0.75rem;           /* mobile-friendly */
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Active button */
+.nav-btn.active {
+    background-color: #5a1f8f;   /* slightly lighter purple */
+}
+
+/* Button hover (desktop safe) */
+.nav-btn:hover {
+    background-color: #4a1c78;
+}
+
 /* Featured Section */
 .content-section {
     margin-bottom: 40px;
