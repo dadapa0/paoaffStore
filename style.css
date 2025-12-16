@@ -34,7 +34,7 @@ header {
     border-bottom: 2px solid #eee;
 }
 
-.sectionDropdown {
+.sectionSelect {
     width: 180px;
     height: 65px;
     background-color: #add8e6; /* light blue */
@@ -55,6 +55,45 @@ header {
     background-position: right 10px center;
     background-size: 12px;
 }
+.sectionSelect {
+  position: relative;
+  width: 200px;
+}
+
+.sectionSelect {
+  padding: 5px 5px;
+  border: 1px solid #15919B;
+  cursor: pointer;
+  background-color: #46DFB1;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #46DFB1;
+  border: 1px solid #15919B;
+  border-top: none;
+  z-index: 99;
+  /* Animation properties */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out; /* Smooth transition */
+  width: 100%;
+}
+
+.select-items.select-show {
+  /* When the 'select-show' class is added by JavaScript, the list slides down */
+  max-height: 200px; /* Needs to be large enough to show all items */
+}
+
+.select-items div {
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.select-items div:hover {
+  background-color: #B6C99B;
+}
+
 
 header h1 {
     color: #2c3e50;
