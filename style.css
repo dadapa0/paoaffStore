@@ -35,8 +35,8 @@ header {
 }
 
 .sectionDropdown {
-    width: 200px;
-    height: 45px;
+    width: 180px;
+    height: 65px;
     background-color: #add8e6; /* light blue */
     border: 1px solid #888;
     border-radius: 6px;
