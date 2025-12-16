@@ -11,97 +11,87 @@
 
     <div class="main-container">
         <header>
-            <img src="paoaff_header.png" alt="Pao's Affiliates & Finds" style="width:100%; height:auto;">
+            <h1>Pao's Affiliates & Finds</h1>
+            <p class="intro">Welcome to my curated collection! Discover the best finds in fashion, gadgets, and home essentials.</p>
         </header>
 
-        <nav class="category-nav">
-            <button class="nav-btn active" onclick="showSection('featured')">Featured</button>
-            <button class="nav-btn" onclick="showSection('clothing')">Clothings</button>
-            <button class="nav-btn" onclick="showSection('school')">School & Office</button>
-            <button class="nav-btn" onclick="showSection('household')">Household</button>
-            <button class="nav-btn" onclick="showSection('gadgets')">Gadgets</button>
-            <button class="nav-btn" onclick="showSection('car')">Car & Moto</button>
-            <button class="nav-btn" onclick="showSection('others')">Others</button>
-        </nav>
-
-        <!-- FEATURED (UNCHANGED) -->
-        <section id="featured" class="content-section active-section">
+        <section id="featured" class="content-section">
             <h2>Featured Products</h2>
             <div class="quadrant-grid">
-                <!-- unchanged -->
-            </div>
-        </section>
-
-        <!-- CLOTHINGS: 5x5 GRID -->
-        <section id="clothing" class="content-section">
-            <h2>Clothings</h2>
-            <p>Check out the latest fashion trends.</p>
-
-            <div class="product-grid-5x5">
+                
                 <div class="product-card">
                     <div class="img-wrapper">
-                        <a href="https://s.shopee.ph/3fwcmsXAjZ" target="_blank">
-                            <img src="img/products/clothing-product01.png" alt="Clothing Product 1">
-                        </a>
+                        <img src="img/products/product01.png" alt="Featured Product 1">
                     </div>
+                    <a href="https://vt.tiktok.com/ZSHwX7BHuJ3YA-WYyPY/" target="_blank" class="shop-btn">Shop Now</a>
                 </div>
 
                 <div class="product-card">
                     <div class="img-wrapper">
-                        <a href="https://s.shopee.ph/13KR9HlPF" target="_blank">
-                            <img src="img/products/clothing-product02.png" alt="Clothing Product 2">
-                        </a>
+                        <img src="img/products/product02.png" alt="Featured Product 2">
                     </div>
+                    <a href="https://vt.tiktok.com/ZSHwX7Xug93p2-cqYt8/" target="_blank" class="shop-btn">Shop Now</a>
                 </div>
 
                 <div class="product-card">
                     <div class="img-wrapper">
-                        <a href="https://vt.tiktok.com/ZSHwbc8TSg8U9-d5Un9/" target="_blank">
-                            <img src="img/products/clothing_product03.png" alt="Clothing Product 3">
-                        </a>
+                        <img src="img/products/product03.png" alt="Featured Product 3">
                     </div>
+                    <a href="https://vt.tiktok.com/ZSHwX7w4AaE92-p8VXd/" target="_blank" class="shop-btn">Shop Now</a>
                 </div>
+
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="img/products/product04.png" alt="Featured Product 4">
+                    </div>
+                    <a href="https://vt.tiktok.com/ZSHwXvBUtkb19-Wllt0/" target="_blank" class="shop-btn">Shop Now</a>
+                </div>
+
             </div>
         </section>
 
-        <!-- OTHER SECTIONS: GRID READY -->
-        <section id="school" class="content-section">
-            <h2>School & Office Supplies</h2>
-            <p>Essentials for productivity.</p>
-            <div class="product-grid-5x5">
-                <div class="empty-state">Coming Soon</div>
-            </div>
-        </section>
+        <section class="carousel-container">
+            <h2>More Categories</h2>
+            <p class="swipe-hint">← Swipe to explore →</p>
+            
+            <div class="carousel-track">
+                
+                <div class="carousel-card clothing-bg">
+                    <h3>Clothings</h3>
+                    <p>Latest fashion trends</p>
+                    <button class="carousel-btn">View Collection</button>
+                </div>
 
-        <section id="household" class="content-section">
-            <h2>Household Products</h2>
-            <p>Make your home better.</p>
-            <div class="product-grid-5x5">
-                <div class="empty-state">Coming Soon</div>
-            </div>
-        </section>
+                <div class="carousel-card school-bg">
+                    <h3>School & Office</h3>
+                    <p>Supplies & Essentials</p>
+                    <button class="carousel-btn">View Collection</button>
+                </div>
 
-        <section id="gadgets" class="content-section">
-            <h2>Gadgets & Electronics</h2>
-            <p>Tech finds you need.</p>
-            <div class="product-grid-5x5">
-                <div class="empty-state">Coming Soon</div>
-            </div>
-        </section>
+                <div class="carousel-card household-bg">
+                    <h3>Household</h3>
+                    <p>Home improvements</p>
+                    <button class="carousel-btn">View Collection</button>
+                </div>
 
-        <section id="car" class="content-section">
-            <h2>Car & Motorcycle Parts</h2>
-            <p>Accessories for your ride.</p>
-            <div class="product-grid-5x5">
-                <div class="empty-state">Coming Soon</div>
-            </div>
-        </section>
+                <div class="carousel-card gadgets-bg">
+                    <h3>Gadgets</h3>
+                    <p>Electronics & Tech</p>
+                    <button class="carousel-btn">View Collection</button>
+                </div>
 
-        <section id="others" class="content-section">
-            <h2>Others</h2>
-            <p>Miscellaneous finds.</p>
-            <div class="product-grid-5x5">
-                <div class="empty-state">Coming Soon</div>
+                <div class="carousel-card car-bg">
+                    <h3>Car & Moto</h3>
+                    <p>Parts & Accessories</p>
+                    <button class="carousel-btn">View Collection</button>
+                </div>
+
+                <div class="carousel-card others-bg">
+                    <h3>Others</h3>
+                    <p>Miscellaneous Finds</p>
+                    <button class="carousel-btn">View Collection</button>
+                </div>
+
             </div>
         </section>
 
@@ -113,3 +103,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
