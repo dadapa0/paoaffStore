@@ -41,12 +41,6 @@ header h1 {
     font-weight: 600;
 }
 
-.intro {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.5;
-}
-
 /* --- UPDATED SELECT SECTION --- */
 
 .sectionSelect-wrapper {
@@ -90,7 +84,7 @@ header h1 {
 /* Dropdown Options (The "Modal") */
 #sectionSelect option {
     background-color: #0C6478; /* Requested Option BG */
-    color: white;              /* Requested Option Text */
+    color: #09D1C7;              /* Requested Option Text */
 }
 
 /* --- END SELECT SECTION --- */
@@ -147,8 +141,4 @@ h2 {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
-}
-
-.product-card:hover .img-wrapper img {
-    transform: scale(1.05);
 }
