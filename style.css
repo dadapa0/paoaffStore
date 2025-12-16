@@ -56,7 +56,7 @@ header h1 {
 }
 
 #sectionSelect {
-    width: 200px;
+    width: 250px;
     height: 45px;
     
     /* Requested Main Background Color */
@@ -83,8 +83,8 @@ header h1 {
 
 /* Dropdown Options (The "Modal") */
 #sectionSelect option {
-    background-color: #0C6478; /* Requested Option BG */
-    color: #09D1C7;              /* Requested Option Text */
+    background-color: #BDD1C5; /* Requested Option BG */
+    color: #000;              /* Requested Option Text */
 }
 
 /* --- END SELECT SECTION --- */
