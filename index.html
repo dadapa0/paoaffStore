@@ -16,8 +16,7 @@
         
         <div class="sectionSelect-wrapper">
             <label>Categories</label>
-            <select id="sectionSelect" name="sectionSelect" class="sectionDropdown">            
-              <option value="">Select category!</option>
+            <select id="sectionSelect" name="sectionSelect" class="sectionDropdown" onchange="showSection(this.value)">            
               <option value="featuredProducts">Featured Products</option>
               <option value="clothings">Clothings</option>
               <option value="schoolandofficeSupplies">School & Offlice Supplies</option>
@@ -28,87 +27,220 @@
             </select>           
         </div>
     
-        <section id="featured" class="content-section">
+        <section id="featuredProducts" class="content-section">
             <h2>Featured Products</h2>
-            <div class="quadrant-grid">
-                
-                <div class="product-card">
-                    <div class="img-wrapper">
-                        <a href="https://vt.tiktok.com/ZSHwX7BHuJ3YA-WYyPY/" target="_blank">
-                        <img src="img/products/product01.png" alt="Featured Product 1">
-                        </a>
-                    </div>                
-                </div>
-
-                <div class="product-card">
-                    <div class="img-wrapper">
-                        <a href="https://vt.tiktok.com/ZSHwX7Xug93p2-cqYt8/" target="_blank" class="shop-btn">
-                        <img src="img/products/product02.png" alt="Featured Product 2">
-                        </a>
-                    </div>               
-                </div>
-
-                <div class="product-card">
-                    <div class="img-wrapper">
-                        <a href="https://vt.tiktok.com/ZSHwX7w4AaE92-p8VXd/" target="_blank">
-                        <img src="img/products/product03.png" alt="Featured Product 3">
-                        </a>
-                    </div>                  
-                </div>
-
-                <div class="product-card">
-                    <div class="img-wrapper">
-                        <a href="https://vt.tiktok.com/ZSHwXvBUtkb19-Wllt0/" target="_blank">
-                        <img src="img/products/product04.png" alt="Featured Product 4">
-                        </a>
-                    </div>                  
-                </div>
-
+            <div class="product-grid-5x5">
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
             </div>
         </section>
 
-        <section class="carousel-container">
-            <h2>More Categories</h2>
-            <p class="swipe-hint">← Swipe to explore →</p>
-            
-            <div class="carousel-track">
-                
-                <div class="carousel-card clothing-bg">
-                    <h3>Clothings</h3>
-                    <p>Latest fashion trends</p>
-                    <button class="carousel-btn">View Collection</button>
-                </div>
+        <section id="clothings" class="content-section hidden">
+            <h2>Clothings</h2>
+            <div class="product-grid-5x5">
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+            </div>
+        </section>
 
-                <div class="carousel-card school-bg">
-                    <h3>School & Office</h3>
-                    <p>Supplies & Essentials</p>
-                    <button class="carousel-btn">View Collection</button>
-                </div>
+        <section id="schoolandofficeSupplies" class="content-section hidden">
+            <h2>School & Office Supplies</h2>
+            <div class="product-grid-5x5">
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+            </div>
+        </section>
 
-                <div class="carousel-card household-bg">
-                    <h3>Household</h3>
-                    <p>Home improvements</p>
-                    <button class="carousel-btn">View Collection</button>
-                </div>
+        <section id="householdProducts" class="content-section hidden">
+            <h2>Household Products</h2>
+            <div class="product-grid-5x5">
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+            </div>
+        </section>
 
-                <div class="carousel-card gadgets-bg">
-                    <h3>Gadgets</h3>
-                    <p>Electronics & Tech</p>
-                    <button class="carousel-btn">View Collection</button>
-                </div>
+        <section id="gadgetsandElectronics" class="content-section hidden">
+            <h2>Gadgets & Electronics</h2>
+            <div class="product-grid-5x5">
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+            </div>
+        </section>
 
-                <div class="carousel-card car-bg">
-                    <h3>Car & Moto</h3>
-                    <p>Parts & Accessories</p>
-                    <button class="carousel-btn">View Collection</button>
-                </div>
+        <section id="autoProducts" class="content-section hidden">
+            <h2>Cars & Moto Parts</h2>
+            <div class="product-grid-5x5">
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+            </div>
+        </section>
 
-                <div class="carousel-card others-bg">
-                    <h3>Others</h3>
-                    <p>Miscellaneous Finds</p>
-                    <button class="carousel-btn">View Collection</button>
-                </div>
-
+        <section id="others" class="content-section hidden">
+            <h2>Others</h2>
+            <div class="product-grid-5x5">
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
+                 <div class="product-card"><div class="img-wrapper"><img src="img/placeholder.png" alt="Product"></div></div>
             </div>
         </section>
 
@@ -117,6 +249,23 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections with class 'content-section'
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section if ID exists, else default to featured
+            const selected = document.getElementById(sectionId);
+            if (selected) {
+                selected.style.display = 'block';
+            } else {
+                // If selection is empty or invalid, show featured
+                document.getElementById('featuredProducts').style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
