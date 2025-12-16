@@ -61,29 +61,36 @@ header h1 {
     color: #333;
 }
 
-/* Target the ID specific to the HTML */
 #sectionSelect {
     width: 200px;
     height: 45px;
-    /* Main Background Color Requested */
-    background-color: #46DFB1;
-    color: #333; /* Text color when closed */
     
-    border: 1px solid #15919B;
+    /* Requested Main Background Color */
+    background-color: #46DFB1;
+    
+    border: 1px solid #888;
     border-radius: 6px;
-    padding: 0 10px;
-    font-size: 16px;
+    padding: 0 35px 0 10px; /* Padding right accommodates the arrow */
+    font-size: 18px;
     cursor: pointer;
-    outline: none;
+    color: #333; 
+
+    /* Remove default system arrow to ensure background color shows */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* Custom arrow from your original code */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='black'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
 }
 
-/* When the select is clicked/open (The Options) */
+/* Dropdown Options (The "Modal") */
 #sectionSelect option {
-    /* Modal Background Color Requested */
-    background-color: #0C6478; 
-    /* Text Color Requested */
-    color: white; 
-    padding: 10px;
+    background-color: #0C6478; /* Requested Option BG */
+    color: white;              /* Requested Option Text */
 }
 
 /* --- END SELECT SECTION --- */
