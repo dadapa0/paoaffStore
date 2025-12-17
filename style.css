@@ -14,12 +14,17 @@ body {
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
+    /* --- MODIFICATION: Added centering for main content --- */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; /* Removed vertical centering for natural flow */
 }
 
 /* Main Container */
 .main-container {
+    /* --- MODIFICATION: Set width to 100% and center container --- */
     width: 100%;
-    margin: 0;
+    margin: 0 auto; 
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.45); /* 45% opacity */
     min-height: 70vh;
@@ -142,3 +147,26 @@ h2 {
     object-fit: cover;
     transition: transform 0.3s;
 }
+
+/* --- MODIFICATION: Responsive Grid Adjustments to prevent overflow on smaller screens --- */
+/* Tablet Layout: 4 columns */
+@media (max-width: 1024px) {
+    .product-grid-5x5 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Landscape Mobile Layout: 3 columns */
+@media (max-width: 768px) {
+    .product-grid-5x5 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Portrait Mobile Layout: 2 columns */
+@media (max-width: 480px) {
+    .product-grid-5x5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* --- END MODIFICATION --- */
