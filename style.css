@@ -17,13 +17,12 @@ body {
 
 /* Main Container */
 .main-container {
-    max-width: 900px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.45); /* 45% opacity */
-    min-height: 70vh; /* Changed from height to min-height */
+    min-height: 70vh;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    /* Removed: overflow: hidden; */
 }
 
 /* Header */
