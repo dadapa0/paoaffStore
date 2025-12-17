@@ -14,15 +14,14 @@ body {
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-    /* --- MODIFICATION: Added centering for main content --- */
+    /* Centering added in previous step */
     display: flex;
     justify-content: center;
-    /* align-items: center; /* Removed vertical centering for natural flow */
 }
 
 /* Main Container */
 .main-container {
-    /* --- MODIFICATION: Set width to 100% and center container --- */
+    /* Full width and centering added in previous step */
     width: 100%;
     margin: 0 auto; 
     padding: 20px;
@@ -50,7 +49,8 @@ header h1 {
 
 .sectionSelect-wrapper {
     margin: 20px 0;
-    text-align: center;
+    /* --- MODIFICATION: Align select and label to the right --- */
+    text-align: right;
 }
 
 .sectionSelect-wrapper label {
@@ -106,7 +106,8 @@ header h1 {
 }
 
 h2 {
-    text-align: center;
+    /* --- MODIFICATION: Align section titles to the right --- */
+    text-align: right;
     margin-bottom: 20px;
     font-size: 1.4rem;
     color: #333;
@@ -148,7 +149,7 @@ h2 {
     transition: transform 0.3s;
 }
 
-/* --- MODIFICATION: Responsive Grid Adjustments to prevent overflow on smaller screens --- */
+/* Responsive Grid Adjustments to prevent overflow on smaller screens */
 /* Tablet Layout: 4 columns */
 @media (max-width: 1024px) {
     .product-grid-5x5 {
@@ -169,4 +170,3 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-/* --- END MODIFICATION --- */
