@@ -49,7 +49,7 @@ header h1 {
 
 .sectionSelect-wrapper {
     margin: 20px 0;
-    /* --- MODIFICATION: Align select and label to the right --- */
+    /* Align select and label to the right */
     text-align: right;
 }
 
@@ -57,7 +57,9 @@ header h1 {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #333;
+    /* --- MODIFICATION: Set color to white with lift effect --- */
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Lift effect */
 }
 
 #sectionSelect {
@@ -106,11 +108,13 @@ header h1 {
 }
 
 h2 {
-    /* --- MODIFICATION: Align section titles to the right --- */
+    /* Align section titles to the right */
     text-align: right;
     margin-bottom: 20px;
     font-size: 1.4rem;
-    color: #333;
+    /* --- MODIFICATION: Set color to white with lift effect --- */
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Lift effect */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
