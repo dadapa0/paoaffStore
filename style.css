@@ -24,7 +24,8 @@ body {
     /* Full width and centering added in previous step */
     width: 100%;
     margin: 0 auto; 
-    padding: 20px;
+    /* CHANGED: Top padding set to 5px to position header 5px from top edge */
+    padding: 5px 20px 20px 20px;
     background-color: rgb(255, 0, 255, 0.45); /* 45% opacity */
     min-height: 70vh;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -33,9 +34,8 @@ body {
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #eee;
+    /* CHANGED: Set bottom margin to 5px for FB button spacing. Removed padding/border */
+    margin-bottom: 5px;
 }
 
 header h1 {
@@ -45,10 +45,17 @@ header h1 {
     font-weight: 600;
 }
 
+/* --- ADDED: Facebook Button Spacing --- */
+.fb-share-button {
+    /* Set bottom margin to 5px for Select Wrapper spacing */
+    margin-bottom: 5px;
+}
+
 /* --- UPDATED SELECT SECTION --- */
 
 .sectionSelect-wrapper {
-    margin: 5px 0;
+    /* CHANGED: Margin top 0, margin bottom 5px for Title spacing */
+    margin: 0 0 5px 0;
     /* Align select and label to the right */
     text-align: right;
 }
@@ -110,6 +117,8 @@ header h1 {
 h2 {
     /* Align section titles to the right */
     text-align: right;
+    /* CHANGED: Top margin 0. Bottom margin keeps space before grid. */
+    margin-top: 0;
     margin-bottom: 20px;
     font-size: 2.2rem;
     /* --- MODIFICATION: Set color to white with lift effect --- */
@@ -117,6 +126,8 @@ h2 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Lift effect */
     text-transform: uppercase;
     letter-spacing: 1px;
+    /* CHANGED: Line height calculation to ensure exactly 5px gap between text lines */
+    line-height: calc(100% + 5px);
 }
 
 /* 5x5 Product Grid (Replaces old quadrant-grid) */
