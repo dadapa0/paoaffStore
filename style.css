@@ -25,7 +25,7 @@ body {
     width: 100%;
     margin: 0 auto; 
     padding: 20px;
-    background-color: rgba(255, 0, 255, 0.45); /* 45% opacity */
+    background-color: rgb(255, 0, 255, 0.45); /* 45% opacity */
     min-height: 70vh;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
