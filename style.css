@@ -26,7 +26,7 @@ body {
     margin: 0 auto; 
     /* CHANGED: Top padding set to 5px to position header 5px from top edge */
     padding: 5px 5px 5px 5px;
-    background-color: rgb(255, 0, 255, 0.45); /* 45% opacity */
+    background-color: rgb(255, 0, 255, 0.25); /* 45% opacity */
     min-height: 70vh;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
