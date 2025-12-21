@@ -74,9 +74,8 @@ header h1 {
     height: 45px;
     
     /* Requested Main Background Color */
-    background-color: #46DFB1;
-    
-    border: 1px solid #888;
+    background-color: #108AB1;
+    border: 3px outset #108AB1;
     border-radius: 6px;
     padding: 0 35px 0 10px; /* Padding right accommodates the arrow */
     font-size: 18px;
