@@ -73,9 +73,12 @@ header h1 {
     width: 100%;
     height: 45px;
     
-    /* Requested Main Background Color */
+    /* Requested Main Background Color with Bevel Effect */
     background-color: #108AB1;
+    
+    /* Bevel Effect: Replaces standard solid border with outset style */
     border: 3px outset #108AB1;
+    
     border-radius: 6px;
     padding: 0 35px 0 10px; /* Padding right accommodates the arrow */
     font-size: 18px;
