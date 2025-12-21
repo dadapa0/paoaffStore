@@ -100,7 +100,7 @@ header h1 {
 /* Dropdown Options (The "Modal") */
 #sectionSelect option {
     background-color: #CFE1B9; /* Requested Option BG */
-    color: #000;              /* Requested Option Text */
+    color: #ffffff;              /* Requested Option Text */
 }
 
 /* --- END SELECT SECTION --- */
